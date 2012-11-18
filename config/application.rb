@@ -61,6 +61,6 @@ module Mboard
     config.assets.version = '1.0'
 
     # makes devise play nice with heroku
-    config.assets.initialize_on_precompile
+    config.assets.initialize_on_precompile = false
   end
 end
