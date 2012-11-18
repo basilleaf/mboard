@@ -2,11 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+	.sidebar-nav {
+	padding: 9px 0;
+}
+      
 .new_post_button {
 	position:fixed;
-	top:60px;
-	right:5%;
+	top:7px;
+	right:270px;
+	z-index:2000;
 
+}
+.notices {
+	margin:20px;
+	margin-top:80px;
+	text-align:right;
 }
 
 ul.posts_list {
