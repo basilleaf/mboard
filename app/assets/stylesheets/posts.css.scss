@@ -12,10 +12,10 @@ body {
 
 .new_post_button {
 	position:fixed;
-	top:7px;
-	right:270px;
-	z-index:2000;
-
+	top:2px;
+	right:250px;
+	z-index:3000;
+	white-space: nowrap;
 }
 .notices {
 	margin:20px;

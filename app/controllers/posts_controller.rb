@@ -1,11 +1,10 @@
 
 class PostsController < ApplicationController
+  before_filter :authenticate_user!
 
 	def new
 	  @post = Post.new
 	end
-
-
 
   def show
     @post = Post.find(params[:id])
