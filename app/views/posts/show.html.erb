@@ -3,7 +3,7 @@
 
 <h3><%= @post.title %></h3>
 
-<p>posted by: <%= @post.user.email %>
+<p>posted by: <%= @post.user.email.split('@').first.split('.').first %>
 <br>on <%= @post.created_at.strftime("%B %d, %Y %I:%l %P") %>
 </p>
 

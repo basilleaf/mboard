@@ -11,7 +11,7 @@
 
       <div class="media-body">
       <h4 class="media-heading"><%= link_to post.title, post %></h4>
-        <span><small><%= post.user.email %></small></span>
+        <span><small><%= post.user.email.split('@').first.split('.').first %></small></span>
       </div>
 
       <div>
