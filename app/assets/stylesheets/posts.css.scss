@@ -9,7 +9,7 @@ body {
 	.sidebar-nav {
 	padding: 9px 0;
 }
-      
+
 .new_post_button {
 	position:fixed;
 	top:7px;
@@ -24,24 +24,32 @@ body {
 }
 
 ul.posts_list {
-	list-style-type:none
+	list-style-type:none;
 }
 
-ul.posts_list li h3 {
+/* profile image */
+ul.posts_list img {
+	margin:0px 20px 0px 0px
+}
+
+/* post title */
+ul.posts_list li h4 {
 	display:inline-block;
-	margin-right:20px
+	margin-right:20px;
 }
 
-ul.posts_list li {
-	border:1px solid white;
-}
-
-/* date line */
+/* title + name line */
 ul.posts_list li div:nth-child(2) { 
-	margin-top:0px;
 }
 
-/* content */
-ul.posts_list li div:nth-child(3) { 
-	margin-top:10px;
+/* title + name line */
+ul.posts_list li div:nth-child(2) span { 
+	margin-left:-15px;
+}	
+
+/* date */
+ul.posts_list li div:nth-child(4) { 
+	margin: 20px 0px 0px 0px;
+	font-size:60%
+
 }

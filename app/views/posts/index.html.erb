@@ -1,21 +1,27 @@
-<%= link_to 'New post', new_post_path, { :class=>"btn btn-primary new_post_button" } %>
 
 <% @posts.each do |post| %>
   <ul class = "posts_list">
     <li class="hero-unit span9">
       
       <div>
-        <h3><%= link_to post.title, post %></h3>
-        <span><%= post.user.email %> </span>
+        <a class="pull-left" href="#">
+          <img class="media-object" width = "100px" src="http://farm9.staticflickr.com/8148/7483481010_298e36d0a2.jpg">
+        </a>
       </div>
 
-      <div>  
-        <%= post.created_at.strftime("%B %d, %Y %I:%l %P") %>
+      <div class="media-body">
+      <h4 class="media-heading"><%= link_to post.title, post %></h4>
+        <span><small><%= post.user.email %></small></span>
       </div>
 
       <div>
         <%= post.content %>
-      <div>
+      </div>
+
+      <div>  
+        <small><%= post.created_at.strftime("%B %d, %Y %I:%l %P") %></small>
+      </div>
+
       </li>
   </ul>
 <% end %>
