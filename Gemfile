@@ -8,7 +8,7 @@ gem 'devise'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
-  gem 'pg'
+  gem 'sqlite3'
 end
 group :production do
   gem 'pg'
