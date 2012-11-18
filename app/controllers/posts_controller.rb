@@ -1,6 +1,6 @@
 
 class PostsController < ApplicationController
-  before_filter :authenticate_user!
+before_filter :authenticate_user!,  :only => [:create, :new, :destroy, :edit]
 
 	def new
 	  @post = Post.new
