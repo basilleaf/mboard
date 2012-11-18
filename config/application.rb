@@ -11,6 +11,7 @@ end
 
 module Mboard
   class Application < Rails::Application
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -58,5 +59,8 @@ module Mboard
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # makes devise play nice with heroku
+    config.assets.initialize_on_precompile
   end
 end

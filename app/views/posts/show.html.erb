@@ -1,0 +1,16 @@
+<div class = "Post content row">
+<div class = "span8 offset1"> 	
+
+<h3><%= @post.title %></h3>
+
+<p>posted by: <%= @post.user.email %>
+<br>on <%= @post.created_at.strftime("%B %d, %Y %I:%l %P") %>
+</p>
+
+<p>
+  <%= @post.content %> 
+</p>
+
+
+</div>
+</div>
