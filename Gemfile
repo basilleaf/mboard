@@ -14,9 +14,7 @@ group :production do
 	gem 'pg' 
 end
 
-group :assets do
-  gem 'bootstrap-sass-rails'
-end
+gem 'bootstrap-sass-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -46,5 +44,3 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-
-gem "twitter-bootstrap-rails", "~> 2.0rc0"
