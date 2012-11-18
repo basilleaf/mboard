@@ -1,3 +1,33 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.new_post_button {
+	position:fixed;
+	top:60px;
+	right:5%;
+
+}
+
+ul.posts_list {
+	list-style-type:none
+}
+
+ul.posts_list li h3 {
+	display:inline-block;
+	margin-right:20px
+}
+
+ul.posts_list li {
+	border:1px solid white;
+}
+
+/* date line */
+ul.posts_list li div:nth-child(2) { 
+	margin-top:0px;
+}
+
+/* content */
+ul.posts_list li div:nth-child(3) { 
+	margin-top:10px;
+}
